@@ -1,0 +1,20 @@
+{
+  "name": "pa_easing",
+  "version": "0.1.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "peerDependencies": {
+    "pa_vector": "*"
+  },
+  "scripts": {
+    "build": "tsup src/index.js --format esm --dts --sourcemap --minify --external pa_vector"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
